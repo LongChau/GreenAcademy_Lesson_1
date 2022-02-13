@@ -1370,50 +1370,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 2983294345544061715, guid: bbabce1abf283a7428b228be3bd809e9, type: 3}
-      propertyPath: m_FlipX
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2983294345544061715, guid: bbabce1abf283a7428b228be3bd809e9, type: 3}
-      propertyPath: m_Color.b
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 2983294345544061715, guid: bbabce1abf283a7428b228be3bd809e9, type: 3}
-      propertyPath: m_Color.g
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 2983294345544061715, guid: bbabce1abf283a7428b228be3bd809e9, type: 3}
-      propertyPath: m_Color.r
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 2983294345544061715, guid: bbabce1abf283a7428b228be3bd809e9, type: 3}
-      propertyPath: m_SortingLayer
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 2983294345544061715, guid: bbabce1abf283a7428b228be3bd809e9, type: 3}
-      propertyPath: m_SortingOrder
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2983294345544061715, guid: bbabce1abf283a7428b228be3bd809e9, type: 3}
-      propertyPath: m_SortingLayerID
-      value: 924130301
-      objectReference: {fileID: 0}
-    - target: {fileID: 2983294345544061724, guid: bbabce1abf283a7428b228be3bd809e9, type: 3}
-      propertyPath: m_UpdateMode
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 2983294345544061725, guid: bbabce1abf283a7428b228be3bd809e9, type: 3}
-      propertyPath: _lives
-      value: 3
-      objectReference: {fileID: 0}
-    - target: {fileID: 2983294345544061725, guid: bbabce1abf283a7428b228be3bd809e9, type: 3}
-      propertyPath: _score
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2983294345544061725, guid: bbabce1abf283a7428b228be3bd809e9, type: 3}
-      propertyPath: _isDead
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 2983294345544061725, guid: bbabce1abf283a7428b228be3bd809e9, type: 3}
       propertyPath: _spawner
       value: 
@@ -1422,10 +1378,6 @@ PrefabInstance:
       propertyPath: _canvasCtrl
       value: 
       objectReference: {fileID: 817539090}
-    - target: {fileID: 7462245913863800021, guid: bbabce1abf283a7428b228be3bd809e9, type: 3}
-      propertyPath: OutputAudioMixerGroup
-      value: 
-      objectReference: {fileID: 3961685340678541102, guid: db680c48dd2c9624a88beb2138b2e499, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: bbabce1abf283a7428b228be3bd809e9, type: 3}
 --- !u!1001 &8012559385587568034

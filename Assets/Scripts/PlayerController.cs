@@ -1,9 +1,13 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class PlayerController : MonoBehaviour
 {
+    [SerializeField]
+    private Slider _sliderHp;
+
     [SerializeField]
     private Spawner _spawner;
     [SerializeField]
@@ -41,6 +45,7 @@ public class PlayerController : MonoBehaviour
                 _canvasCtrl.ShowReplayUI();
                 Time.timeScale = 0f;    // Pause game.
             }
+            _sliderHp.value = _lives;
             _canvasCtrl.SetLives(_lives);
         }
     }
@@ -65,6 +70,8 @@ public class PlayerController : MonoBehaviour
         _anim.SetBool("isLeft", false);
         _anim.SetBool("isIdle", true);
 
+        _sliderHp.minValue = 0;
+        _sliderHp.maxValue = Lives;
         _canvasCtrl.SetLives(Lives);
         _canvasCtrl.SetScore(Score);
     }

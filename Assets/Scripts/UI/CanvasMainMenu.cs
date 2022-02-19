@@ -18,11 +18,20 @@ public class CanvasMainMenu : MonoBehaviour
 
     public void OnBtnStartClicked()
     {
+        
         SceneManager.LoadScene("PlayScene");
     }
 
     public void OnBtnExitClicked()
     {
         Application.Quit();
+    }
+    public void OnlButtonSetingClick()
+    {
+        Debug.Log("Setting");
+        int a = 5;
+        string name = "Thay Long dep trai";
+        Debug.Log("Hello: " + name + " " + a);
+        Debug.Log($"Hello: {name} {a}");
     }
 }

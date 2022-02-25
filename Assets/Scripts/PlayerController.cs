@@ -31,7 +31,9 @@ public class PlayerController : MonoBehaviour
     private int _score;
     [SerializeField]
     private bool _isDead;
+    [SerializeField] private PlayerData playerData;
 
+    private float _time;
     public int Lives
     {
         get => _lives;
@@ -44,6 +46,7 @@ public class PlayerController : MonoBehaviour
                 _anim.SetTrigger("triggerDead");
                 _canvasCtrl.ShowReplayUI();
                 Time.timeScale = 0f;    // Pause game.
+                PlayerPrefs.SetFloat("DeadTime", _time);
             }
             _sliderHp.value = _lives;
             _canvasCtrl.SetLives(_lives);
@@ -64,6 +67,8 @@ public class PlayerController : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        _lives = playerData.Live;
+        _speed = playerData.Speed;
         //_anim.SetFloat("", 5.5f);
         //_anim.SetInteger("", 5);
         //_anim.SetTrigger("");
@@ -102,6 +107,8 @@ public class PlayerController : MonoBehaviour
         {
             _anim.SetBool("isIdle", true);
         }
+
+        _time += Time.deltaTime;
     }
 
     // OnTriggerEnter2D is called when the Collider2D other enters the trigger (2D physics only)

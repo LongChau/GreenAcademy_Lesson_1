@@ -8,12 +8,18 @@ public class CanvasMainMenu : MonoBehaviour
 {
     [SerializeField]
     private TextMeshProUGUI _txtScore;
+    [SerializeField]
+    private TextMeshProUGUI _txtTime;
+    [SerializeField]
+    private PnlSettingMainMenu _pnlSetting;
 
     // Start is called before the first frame update
     void Start()
     {
         var score = PlayerPrefs.GetInt("score", 0);
+        var time = (int)PlayerPrefs.GetFloat("DeadTime", 0);
         _txtScore.SetText($"Score: {score}");
+        _txtTime.SetText($"Time: {time}");
     }
 
     public void OnBtnStartClicked()
@@ -29,9 +35,6 @@ public class CanvasMainMenu : MonoBehaviour
     public void OnlButtonSetingClick()
     {
         Debug.Log("Setting");
-        int a = 5;
-        string name = "Thay Long dep trai";
-        Debug.Log("Hello: " + name + " " + a);
-        Debug.Log($"Hello: {name} {a}");
+        _pnlSetting.gameObject.SetActive(true);
     }
 }

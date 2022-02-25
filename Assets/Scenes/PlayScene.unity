@@ -1375,9 +1375,21 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 2006532601}
     - target: {fileID: 2983294345544061725, guid: bbabce1abf283a7428b228be3bd809e9, type: 3}
+      propertyPath: playerData
+      value: 
+      objectReference: {fileID: 11400000, guid: 9072e9bdf282243479a451399258918a, type: 2}
+    - target: {fileID: 2983294345544061725, guid: bbabce1abf283a7428b228be3bd809e9, type: 3}
       propertyPath: _canvasCtrl
       value: 
       objectReference: {fileID: 817539090}
+    - target: {fileID: 3903493380999029251, guid: bbabce1abf283a7428b228be3bd809e9, type: 3}
+      propertyPath: m_AnchorMax.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3903493380999029251, guid: bbabce1abf283a7428b228be3bd809e9, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: bbabce1abf283a7428b228be3bd809e9, type: 3}
 --- !u!1001 &8012559385587568034
